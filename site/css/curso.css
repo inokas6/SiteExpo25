@@ -1,0 +1,306 @@
+/* Resetar estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importação de fonte */
+@import url('https://db.onlinewebfonts.com/c/9f62e2b9b9235acb5512c7f03cf0f792?family=Burbank+Small+Black');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+html, body {
+  height: 100%;
+  font-family: "Burbank Small Black", sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #ffeaa3 0%, #fff8e3 100%);
+  scroll-behavior: smooth;
+}
+
+
+/* Conteúdo principal responsivo */
+.texto-meio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.texto-meio {
+  width: 80%;
+  height: 200px;
+  background-color: #f5ecd3;
+  border-radius: 35px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-meio p {
+  font-size: 50px;
+  color: black;
+}
+
+/* Imagem responsiva */
+.imagem-container {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f5ecd3;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-container img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.imagem-container img:hover {
+  transform: scale(1.02);
+}
+
+/* Seção de curso responsiva */
+.curso-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.curso-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.curso-texto {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5ecd3;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.curso-texto h2 {
+  color: #ffc107;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.curso-texto p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Carrossel responsivo */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #ffc107;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Seção de vídeo responsiva */
+.video-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5ecd3;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+  
+  .texto-meio {
+    width: 95%;
+    height: 150px;
+  }
+
+  .texto-meio p {
+    font-size: 40px;
+  }
+
+  .curso-texto h2 {
+    font-size: 24px;
+  }
+
+  .curso-texto p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .video-container {
+    width: 95%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .imagem-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .imagem-container img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ 
+  .texto-meio {
+    height: 120px;
+  }
+
+  .texto-meio p {
+    font-size: 32px;
+  }
+
+  .curso-texto h2 {
+    font-size: 22px;
+  }
+
+  .curso-texto p {
+    font-size: 13px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .video-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .imagem-container {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .imagem-container img {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+  .texto-meio p {
+    font-size: 28px;
+  }
+
+  .curso-texto h2 {
+    font-size: 20px;
+  }
+
+  .curso-texto p {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 180px;
+  }
+
+  .card img {
+    height: 100px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 11px;
+  }
+
+  .video-container {
+    margin: 15px auto;
+    padding: 8px;
+  }
+
+  .imagem-container {
+    margin: 10px auto;
+    padding: 8px;
+  }
+
+  .imagem-container img {
+    max-height: 250px;
+  }
+}
